@@ -1,14 +1,11 @@
 package by.samova.university.entity;
 
-import by.samova.university.util.ActionAll;
-import by.samova.university.util.ActionTeacher;
-
 public class Teacher implements ActionTeacher, ActionAll {
     private String name;
     private String surname;
     private int age;
-    public Student st;
-    public University univ;
+    private Student st;
+    private University univ;
 
     public String getName() {
         return name;
@@ -32,6 +29,22 @@ public class Teacher implements ActionTeacher, ActionAll {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Student getSt() {
+        return st;
+    }
+
+    public void setSt(Student st) {
+        this.st = st;
+    }
+
+    public University getUniv() {
+        return univ;
+    }
+
+    public void setUniv(University univ) {
+        this.univ = univ;
     }
 
     @Override

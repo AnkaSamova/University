@@ -4,8 +4,8 @@ public class University {
     private String title;
     private String department;
     private String subject;
-    public Student st;
-    public Teacher teacher;
+    private Student st;
+    private Teacher teacher;
 
     public String getTitle() {
         return title;
@@ -29,5 +29,21 @@ public class University {
 
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    public Student getSt() {
+        return st;
+    }
+
+    public void setSt(Student st) {
+        this.st = st;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
     }
 }

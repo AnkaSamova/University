@@ -1,4 +1,4 @@
-package by.samova.university.util;
+package by.samova.university.entity;
 
 public interface ActionAll {
     void comeLecture();

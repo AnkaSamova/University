@@ -1,8 +1,8 @@
 package by.samova.university.service;
 
-import by.samova.university.util.ActionAll;
-import by.samova.university.util.ActionStudent;
-import by.samova.university.util.ActionTeacher;
+import by.samova.university.entity.ActionAll;
+import by.samova.university.entity.ActionStudent;
+import by.samova.university.entity.ActionTeacher;
 
 public class Behavior {
     public void come(ActionAll actionAll) {

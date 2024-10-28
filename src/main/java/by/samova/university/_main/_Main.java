@@ -52,26 +52,26 @@ public class _Main {
         univ3.setDepartment("No-Code");
         univ3.setSubject("Tilda");
 
-        st1.teacher = teacher1;
-        st2.teacher = teacher2;
-        st3.teacher = teacher3;
-        st1.univ = univ1;
-        st2.univ = univ2;
-        st3.univ = univ3;
+        st1.setTeacher(teacher1);
+        st2.setTeacher(teacher2);
+        st3.setTeacher(teacher3);
+        st1.setUniv(univ1);
+        st2.setUniv(univ2);
+        st3.setUniv(univ3);
 
-        teacher1.st = st1;
-        teacher2.st = st2;
-        teacher3.st = st3;
-        teacher1.univ = univ1;
-        teacher2.univ = univ2;
-        teacher3.univ = univ3;
+        teacher1.setSt(st1);
+        teacher2.setSt(st2);
+        teacher3.setSt(st3);
+        teacher1.setUniv(univ1);
+        teacher2.setUniv(univ2);
+        teacher3.setUniv(univ3);
 
-        univ1.st = st1;
-        univ2.st = st2;
-        univ3.st = st3;
-        univ1.teacher = teacher1;
-        univ2.teacher = teacher2;
-        univ3.teacher = teacher3;
+        univ1.setSt(st1);
+        univ2.setSt(st2);
+        univ3.setSt(st3);
+        univ1.setTeacher(teacher1);
+        univ2.setTeacher(teacher2);
+        univ3.setTeacher(teacher3);
 
         Behavior behavior = new Behavior();
         behavior.studies(st1);
