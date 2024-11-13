@@ -4,7 +4,7 @@ public class University {
     private String title;
     private String department;
     private String subject;
-    private Student st;
+    private Student student;
     private Teacher teacher;
 
     public String getTitle() {
@@ -31,12 +31,12 @@ public class University {
         this.subject = subject;
     }
 
-    public Student getSt() {
-        return st;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setSt(Student st) {
-        this.st = st;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
     public Teacher getTeacher() {

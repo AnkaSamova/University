@@ -5,7 +5,7 @@ public class Student implements ActionStudent, ActionAll {
     private int age;
     private String city;
     private Teacher teacher;
-    private University univ;
+    private University university;
 
     public String getName() {
         return name;
@@ -39,41 +39,41 @@ public class Student implements ActionStudent, ActionAll {
         this.teacher = teacher;
     }
 
-    public University getUniv() {
-        return univ;
+    public University getUniversity() {
+        return university;
     }
 
-    public void setUniv(University univ) {
-        this.univ = univ;
+    public void setUniversity(University university) {
+        this.university = university;
     }
 
     @Override
     public void study() {
-        System.out.println("Студентка " + getName() + " пришла учиться в университет " + univ.getTitle() + " к преподавателю " + teacher.getName());
+        System.out.println("Студентка " + getName() + " пришла учиться в университет " + university.getTitle() + " к преподавателю " + teacher.getName());
     }
 
     @Override
     public void homework() {
-        System.out.println("Студентка " + getName() + " получила ДЗ по предмету " + univ.getSubject() + " от преподавателя " + teacher.getSurname());
+        System.out.println("Студентка " + getName() + " получила ДЗ по предмету " + university.getSubject() + " от преподавателя " + teacher.getSurname());
     }
 
     @Override
     public void getsRating() {
-        System.out.println("Студентка " + getName() + " из города " + getCity() + ", " + getAge() + " лет, получила оценку на факультете " + univ.getDepartment());
+        System.out.println("Студентка " + getName() + " из города " + getCity() + ", " + getAge() + " лет, получила оценку на факультете " + university.getDepartment());
     }
 
     @Override
     public void comeLecture() {
-        System.out.println("Студентка " + getName() + " пришла на лекцию по " + univ.getSubject() + " на факультете " + univ.getDepartment());
+        System.out.println("Студентка " + getName() + " пришла на лекцию по " + university.getSubject() + " на факультете " + university.getDepartment());
     }
 
     @Override
     public void comeExam() {
-        System.out.println("Студентка " + getName() + " пришла на экзамен в университет " + univ.getTitle() + " к преподавателю " + teacher.getName());
+        System.out.println("Студентка " + getName() + " пришла на экзамен в университет " + university.getTitle() + " к преподавателю " + teacher.getName());
     }
 
     @Override
     public void lunch() {
-        System.out.println("Студентка " + getName() + " поела в столовой университета " + univ.getTitle());
+        System.out.println("Студентка " + getName() + " поела в столовой университета " + university.getTitle());
     }
 }

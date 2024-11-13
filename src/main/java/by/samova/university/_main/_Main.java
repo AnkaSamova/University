@@ -55,20 +55,20 @@ public class _Main {
         st1.setTeacher(teacher1);
         st2.setTeacher(teacher2);
         st3.setTeacher(teacher3);
-        st1.setUniv(univ1);
-        st2.setUniv(univ2);
-        st3.setUniv(univ3);
+        st1.setUniversity(univ1);
+        st2.setUniversity(univ2);
+        st3.setUniversity(univ3);
 
-        teacher1.setSt(st1);
-        teacher2.setSt(st2);
-        teacher3.setSt(st3);
-        teacher1.setUniv(univ1);
-        teacher2.setUniv(univ2);
-        teacher3.setUniv(univ3);
+        teacher1.setStudent(st1);
+        teacher2.setStudent(st2);
+        teacher3.setStudent(st3);
+        teacher1.setUniversity(univ1);
+        teacher2.setUniversity(univ2);
+        teacher3.setUniversity(univ3);
 
-        univ1.setSt(st1);
-        univ2.setSt(st2);
-        univ3.setSt(st3);
+        univ1.setStudent(st1);
+        univ2.setStudent(st2);
+        univ3.setStudent(st3);
         univ1.setTeacher(teacher1);
         univ2.setTeacher(teacher2);
         univ3.setTeacher(teacher3);
